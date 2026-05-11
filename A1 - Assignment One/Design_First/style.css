@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins";
+    overflow-x: hidden;
+}
+
+#main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+/* Left Part Styling */
+#left-part {
+    margin: 10px;
+    border: 2px solid rgb(251, 198, 12);
+    border-radius: 10px;
+    height: 100%;
+    width: 50%;
+    background-color: rgb(251, 198, 12);
+    position: relative;
+    overflow: hidden;
+}
+
+
+#pikachu {
+    position: absolute;
+}
+
+#pokemon-logo img {
+    width: 150px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.left-alignment {
+    margin-left: 50px;
+}
+
+#left-part h6 {
+    margin-top: 150px;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+
+#left-part h1 {
+    font-size: 75px;
+    font-weight: 500;
+}
+
+#date{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    top: 10px;
+}
+
+#line{
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background: black;
+    top: 18px;
+    left: 50px;
+}
+
+#date p {
+    position: absolute;
+    left: 100px;
+    top: 8px;
+}
+
+#pokeball {
+    top: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    background: rgba(0, 0, 0, 0.08);
+    left: 50px;
+    border: 10px solid rgba(0, 0, 0, 0.08   );
+}
+
+#mid-line::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 40%;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.08);
+    transform: translateY(-50%);
+}
+
+#mid-line::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 40%;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.08);
+    transform: translateY(-50%);
+}
+
+#inner-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border: 10px solid rgba(0, 0, 0, 0.08);
+    border-radius: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+/* Right Part Styling */
+#right-part {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    border-radius: 10px;
+    background-color: rgb(250, 232, 181);
+}
+
+#menu-bar img {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left:90%;
+    top: 5%;
+}
+
+#pikachu img {
+    position: absolute;
+    height: 500px;
+    width: 800px;
+    left: -400px;
+    top: 40px;
+}

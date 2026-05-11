@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(
+        circle at top,
+        #181818,
+        #050505
+    );
+    font-family: "Poppins";
+}
+
+#heading {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#heading h4 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+#divider{
+    width: 350px;
+    margin: 10px auto 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.line{
+    flex: 1;
+    height: 1px;
+
+    background: linear-gradient(
+        to right,
+        transparent,
+        #ff7a00
+    );
+}
+
+#active-line {
+     background: linear-gradient(
+        to left,
+        transparent,
+        #ff7a00
+    );
+}
+
+.logo span {
+    color: #ff7a00;
+}
+
+/* Main-Content Styling */
+#main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card {
+    position: relative;
+    background-color: #111111;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.signature {
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: 2px solid #ff7a00;
+    border-radius: 20px;
+    font-size: 10px;
+    position: absolute;
+    z-index: 3;
+    color: #ff7a00;
+}
+
+.card img {
+    width: 250px;
+    height: 320px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.text h3 {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.text span {
+    font-size: 10px;
+    font-weight: 100;
+    color: rgb(167, 166, 166);
+}
+
+.short-line{
+    width: 50px;
+    height: 1px;
+    background-color: #ff7a00;
+    margin: 15px auto;
+    opacity: 0.7;
+}
+
+.price {
+    display: flex;
+    justify-content: center;    
+}
+
+.price span {
+    font-size: 15px;
+    color: #ff7a00;
+    margin-bottom: 15px;
+}
+
+#food{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    width: 90%;
+    margin: 80px auto;
+    padding: 30px;
+    background: linear-gradient(
+        180deg,
+        #161616,
+        #0b0b0b
+    );
+
+    border-radius: 30px;
+    border-bottom: 1px solid #ff7a00;
+    overflow: hidden;
+}
+
+#leaf{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    opacity: 0.08;
+    z-index: 1;
+}
+
+#leaf img{
+    width: 240px;
+    object-fit: contain;
+    filter: sepia(1) saturate(5);
+}
+
+#food-image{
+    position: relative;
+    z-index: 2;
+}
+
+#food-image img{
+    width: 280px;
+    height: 360px;
+    object-fit: contain;
+}
+
+#food-content{
+    position: relative;
+    z-index: 2;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+
+/* Small Top Text */
+
+.food-label span{
+    color: #ff7a00;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+
+/* Main Heading */
+
+.food-heading h2{
+    color: white;
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+
+/* Paragraph */
+
+.food-description p{
+    color: #999;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+
+/* Button */
+
+#explore{
+    background: transparent;
+    color: #ff7a00;
+    border: 1px solid #ff7a00;
+    padding: 14px 28px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#explore:hover{
+    background-color: #ff7a00;
+    color: black;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+#copyright {
+    color: rgb(188, 187, 187);
+    font-size: 15px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.dot {
+    margin: 0 12px;
+    color: #ff7a00;
+    font-size: 12px;
+}
+
+#socials{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#socials i{
+    color: #ff7a00;
+    border: 1px solid #ff7a00;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+#socials i:hover{
+    background-color: #ff7a00;
+    color: black;
+    box-shadow: 0 0 10px rgba(255,122,0,0.6);
+}
