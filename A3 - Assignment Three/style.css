@@ -228,13 +228,15 @@ input {
 .tag {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .tag-data {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex;
     padding: 5px;
 }
 
@@ -253,10 +255,10 @@ input {
 
 .text {
     padding: 5px;
-    line-height: 2px;
-    font-size: 13px;
+    font-size: 12px;
     text-transform: uppercase;
     font-weight: 500;
+    line-height: 15px;
 }
 
 .mid-image{
