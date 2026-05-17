@@ -1,0 +1,538 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 23% 19% 7% 27% 22%;
+    grid-template-rows: 29% 24% 7% 18% 18%;
+    grid-template-areas:
+    "left-top top-center-1 top-center-1 top-center-2 right-top"
+    "left-top center center center right-top"
+    "left-bottom center center center right-top"
+    "left-bottom center center center right-bottom"
+    "left-bottom bottom-center-1 bottom-center-2 bottom-center-2 right-bottom"
+    ;
+    gap: 5px;
+}
+
+.left-top {
+    background-color: rgb(254, 217, 223);
+    grid-area: left-top;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.left-bottom {
+    background-color: rgb(49, 49, 49);
+    grid-area: left-bottom;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-top {
+    background-color: rgb(255, 255, 255);
+    grid-area: right-top;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15px;
+}
+
+.right-bottom {
+    background-color: white;
+    grid-area: right-bottom;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-center-1 {
+    background-color: rgb(253, 255, 254);
+    grid-area: top-center-1;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.top-center-2 {
+    background-color: white;
+    grid-area: top-center-2;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+.center {
+    background-color: rgb(248, 154, 204);
+    grid-area: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.bottom-center-1 {
+    background-color: white;
+    grid-area: bottom-center-1;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.bottom-center-2 {
+    grid-area: bottom-center-2;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.circle {
+    width: 45%;
+    height: 100%;
+    background: radial-gradient(rgb(247, 226, 229), pink);
+    border-radius: 50%;
+}
+
+#woman {
+    position: absolute;
+    height: 120%;
+    bottom: 0;
+}
+
+.bottom-center-2-div1 {
+    padding: 10px;
+}
+
+.bottom-center-2-div1 h3 {
+    font-size: 16px;
+    line-height: 1.2;
+    word-spacing: 1px;
+    color: black;
+    margin-left: 10px;
+}
+
+.bottom-center-2-div1 p {
+    font-size: 10px;
+    color: black;
+    line-height: 1.2;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.bottom-center-2-div1 button {
+    margin-left: 10px;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 8px;
+    font-size: 10px;
+    font-weight: 400;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.bottom-center-2 img {
+    height: 90%;
+    width: 20%;
+}
+
+.profiles {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#first-image {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+}
+
+.over-lap {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+    margin-left: -15px;
+}
+
+.black-shade {
+    background: radial-gradient(rgb(249, 249, 249), rgb(81, 81, 81));
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    height: 0.5px;
+    margin-top: 15px;
+    background: radial-gradient(rgb(203, 200, 200), rgb(223, 221, 221));
+}
+
+.right-top-text {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.right-top h1 {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.bottom-text h4 {
+    color: rgb(237, 132, 132);
+}
+
+.bottom-text p {
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.bottom-finishing {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ri-user-add-fill {
+    font-size: 30px;
+    padding: 10px;
+    color: rgb(243, 139, 157);
+}
+
+.heading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.heading h1 {
+    font-size: 50px;
+}
+
+.heading i {
+    border: 1px solid pink;
+    color: rgb(243, 76, 103);
+    font-size: 15px;
+    border-radius: 50%;
+    background: radial-gradient(rgb(252, 192, 202), rgb(250, 203, 211));
+    padding: 10px;
+}
+
+.text {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.bottom-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.bottom-text p {
+    font-size: 10px;
+    color: rgb(147, 146, 146);
+    font-weight: 100;
+}
+
+.growth-sign {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid rgb(242, 238, 238);
+    border-radius: 25px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.growth-sign img {
+    height: 15px;
+    width: 15px;
+}
+
+.growth-sign span {
+    color: rgb(237, 132, 132);
+    font-size: 12px;
+}
+
+.bottom-center-1 h3 {
+    font-size: 12px;
+}
+
+.bottom-center-1 p {
+    font-size: 10px;
+}
+
+.shades {
+    display: flex;
+    padding: 5px;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 0;
+}
+
+.shade {
+    height: 20px;
+    width: 20px;
+    border-radius: 3px;
+}
+
+.end-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+#one {
+    background-color: aquamarine;
+}
+
+#two {
+    background-color: rgb(24, 113, 192);
+}
+
+#three {
+    background-color: rgb(29, 72, 58);
+}
+
+#four {
+    background-color: rgb(148, 151, 69);
+}
+
+#five {
+    background-color: rgb(24, 207, 61);
+}
+
+#six {
+    background-color: rgb(119, 6, 35);
+}
+
+.left-bottom-profiles {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile-image {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+    margin-left: -15px;
+}
+
+#image-one {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+}
+
+.red-shade {
+    background: radial-gradient(rgb(250, 128, 128), rgb(217, 121, 121));
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    text-align: center;
+    height: 30px;
+    border-radius: 12px;
+    color: white;
+    background-color: gray;
+    width: 40px;
+    border: 1px solid;
+    padding: 5px;
+}
+
+.head h2 {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+
+.head span {
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(253, 170, 184);
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding-top: 5px;
+}
+
+.images img {
+    height: 90%;
+    width: 28%;
+    border-radius: 20px;
+}
+
+.right-bottom img {
+    height: 100px;
+    width: 100px;
+}
+
+.right-bottom h1 {
+    margin-top: -10px;
+}
+
+.right-bottom p {
+    padding-top: 5px;
+}
+
+.right-bottom button {
+    border: none;
+    border-radius: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 10px;
+    background-color: pink;
+}
+
+.text-and-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.percent-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: auto;
+    border: 5px solid rgb(245, 105, 128);
+    border-left-color: pink;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.percent-bar h1 {
+    font-size: 25px;
+}
+
+.percent-bar p {
+    font-size: 10px;
+}
+
+.left-top h3 {
+    font-size: 25px;
+}
+
+.left-top p {
+    font-size: 12px;
+}
+
+.left-top button {
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#graph {
+    position: absolute;
+    right: 20px;
+    bottom: 80px;
+    width: 180px;
+    height: auto;
+    z-index: 2;
+}
+
+.left-part {
+    position: absolute;
+    background-color: white;
+    left: 10px;
+    bottom: 100px;
+    width: 180px;
+    border: 1px solid white;
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 25px;
+    gap: 10px;
+}
+
+.play-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.play-text p {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    font-size: 13px;
+}
+
+.play-icon {
+    color: rgb(252, 131, 151);
+    font-size: 35px;
+}
